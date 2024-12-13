@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="icon" href="../images/apple.png">
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <ul class="flex list between">
+        <li>
+            <a href="#">FRUIT SHOP</a>
+        </li>
+        <li>
+            <ul class="flex nav">
+                <li>
+                    <a href="../index.html">Products</a>
+                </li>
+                <li><a href="./basket.html">Basket</a></li>
+                <li>
+                    <a href="#">Admin page</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2 class="m20">Admin Page</h2>
+
+    <table class="m20" id="productTable">
+
+    </table>
+
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Edit Product</h2>
+            <form id="editForm">
+                <label for="editName">Name:</label><br>
+                <input type="text" id="editName" name="editName"><br><br>
+                <label for="editCountry">Country:</label><br>
+                <input type="text" id="editCountry" name="editCountry"><br><br>
+                <label for="editPrice">Price:</label><br>
+                <input type="number" id="editPrice" name="editPrice" step="0.01"><br><br>
+                <label for="editCount">Count:</label><br>
+                <input type="number" id="editCount" name="editCount" min="1"><br><br>
+                <input type="submit" value="Save Changes">
+            </form>
+        </div>
+    </div>
+<script src="../js/adminpage.js"></script>
+</body>
+</html>
